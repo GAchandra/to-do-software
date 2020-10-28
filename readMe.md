@@ -1,4 +1,4 @@
-A Web-based To-Do List " Software.
+A Web-based To-Do List " Software".
 ---------------------------------------
 It is a brand new Software that software is correctly developing and add more and more.
 I this time-released version 1.0.0 of that software

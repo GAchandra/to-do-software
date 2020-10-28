@@ -1,0 +1,16 @@
+<%- include("partials/header") %>
+<%-include("partials/navigation")%>
+<div class="middle-wrapper">
+    <img src="img/bakcground.jpeg" class="background" alt="bakcground">
+    <div class="auth-container">
+        <header>
+            <h1>Sign In</h1>
+        </header>
+        <form action="/sign-in" method="post">
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="password">
+            <button type="submit" class="btn" name="sign-up">Sign In</button>
+        </form>
+    </div>
+</div>
+<%- include("partials/footer") %>

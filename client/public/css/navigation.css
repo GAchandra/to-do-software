@@ -1,0 +1,38 @@
+header.header {
+    padding: 5px 25px;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #2998d9;    
+}
+nav {
+    padding-right: 28px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+}
+ul {
+
+    width: auto;
+    height: 100%;
+    display:flex;
+    
+    align-items:center;
+    margin-left: auto;
+
+    list-style: none;
+}
+li {
+    display: inline;
+    padding: 5px;
+    margin:5px;
+    font-weight: normal;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+}
+li a:hover {
+    text-decoration: underline;
+    color: #4929d9;
+}

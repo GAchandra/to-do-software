@@ -1,0 +1,39 @@
+<%- include("partials/userHeader") %>
+<%-include("partials/user-navigation")%>
+<div class="middle-wrapper">
+   
+    <div class="top-wrapper">
+        <h1>Hi <strong><%= userName %> !</strong></h1>
+        <div class="create-new-list">
+            <header>
+                <h2>Create a brand new list on your own!</h2>
+            </header>
+
+            <form class="content" action="/create-new-list" method="post">
+                <input type="text" name="list-title" placeholder="List Title">
+                <button type="submit" class="btn">Create new list</button>
+            </form>
+        </div>
+    </div>
+    <div class="to-do-wrapper">
+        <div class="lists-showing-wrapper">
+            <% if (lists) {%>
+                <% lists.forEach(list => { %>
+                    <div class="list-containt">
+                        <h1><%= list.title %> </h1>
+                        <hr>
+                        <div class="itme-container"> 
+                            <% list.items.forEach(item => { %>
+                                <div class="item-content">
+                                    <h3><%= item.title %> </h3>
+                                    <button class="btn">Done</button>
+                                </div>
+                            <% }) %>
+                        </div>
+                    <% }) %>
+                </div>
+            <% } %> 
+        </div>
+    </div>
+</div>
+<%- include("partials/footer") %>

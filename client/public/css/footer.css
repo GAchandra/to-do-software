@@ -1,0 +1,16 @@
+footer {
+    z-index: 1;
+    position: fixed;
+    bottom: 1px;
+    width: 100%;
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #2998d9
+}
